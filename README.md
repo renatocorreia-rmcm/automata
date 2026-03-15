@@ -10,8 +10,8 @@ Considere o AFD que aceite a linguagem de todos os strings que começam com 1 e 
 
 ### Inicialização do autômato
 
-![](images/automata_initialization_example.png)
+![](automata_initialization_example.png)
 
 ### Resultado dos testes
 
-![](images/automata_result_example.png)
+![](automata_result_example.png)
