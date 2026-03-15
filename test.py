@@ -32,13 +32,12 @@ AUTOMATA 2:
 todos os strings que começam com 1 e que quando interpretado como um inteiro binário é um múltiplo de 5
 """
 
-Q = ["q_inicial", "q_morto",  # garantir que não começa com 0
-     "q0", "q1", "q2", "q3", "q4"]  # um estado para cada 'n mod 5 = k'
-F = ["q0"]
-
 automata_2: Automata = Automata(
-	Q=Q,
+	Q=["q_inicial", "q_morto",  # garantir que não começa com 0
+	   "q0", "q1", "q2", "q3", "q4"],  # um estado para cada 'n mod 5 = k'
+
 	sigma=["0", "1"],
+
 	delta={
 		("q_inicial", "0"): "q_morto",
 		("q_inicial", "1"): "q1",
@@ -61,7 +60,9 @@ automata_2: Automata = Automata(
 		("q4", "0"): "q3",
 		("q4", "1"): "q4",
 	},
+
 	q0="q_inicial",
+
 	F=["q0"]
 )
 
