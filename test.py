@@ -6,12 +6,11 @@ AUTOMATA 1:
 STRINGS WHERE 'a's ARE BEFORE 'b's
 """
 
-Q = ["q0", "q1", "q2"]
-F = ["q0", "q1"]
-
 automata_1: Automata = Automata(
-	Q=Q,
+	Q = ["q0", "q1", "q2"],
+	
 	sigma=["a", "b"],
+	
 	delta={
 		("q0", "a"): "q0",
 		("q0", "b"): "q1",
@@ -20,7 +19,9 @@ automata_1: Automata = Automata(
 		("q2", "a"): "q2",
 		("q2", "b"): "q2",
 	},
+	
 	q0="q0",
+	
 	F=["q0", "q1"]
 )
 
