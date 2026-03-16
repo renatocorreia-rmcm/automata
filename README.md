@@ -1,7 +1,16 @@
 # automata
 
-Python implementation of automata for test purposes
+Python implementation of automata for test purposes.
+It constructs an automata based on its formal definition:
+- Set of states
+- Alphabet
+- Transiction Function
+- Initial State
+- Set of Final States
 
+After the construction, any WORD in Sigma* can be tested in the AUTOMATA simply calling `AUTOMATA.accepts(WORD)`.
+
+Or you can run a test for every word with length <= N in Sigma* simply calling `AUTOMATA.flood(N)`.
 
 ## Demo
 
